@@ -1,0 +1,29 @@
+<% include partials/header %>
+
+<div class="container" ng-model="curkeyword" ng-repeat="place in placesVisited | filter:curPlace">
+    
+    <header class="jumbotron">
+        
+        <div class="container">
+        
+        <h1>List of all searched keywords</h1>
+        
+        <p>
+            <a class="btn btn-primary btn-md" href="/keywords/new">Search a new keyword</a>
+        </p>
+        
+        </div>
+        
+    </header>
+
+    <% for(var i=0; i<keywords.length ;i++){ %>
+
+    <a href="/keywords/<%= keywords[i]._id %>" ng-href><%= keywords[i].name%><br></a>
+
+    <% } %>
+   
+</div>
+
+
+
+<% include partials/footer %>

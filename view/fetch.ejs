@@ -1,0 +1,44 @@
+
+<% include partials/header %>
+
+<div class="container">
+ 
+  <header class="jumbotron">
+ 
+     <div class="conatiner">
+  
+        <h3>Images of <%= keyword %> displayed</h3>
+ 
+           <p>
+           
+             <a class="btn btn-primary btn-md" href="/">Search a new keyword</a>
+         
+           </p>
+ 
+        <a href="/keywords">View all the searched keywords</a>
+ 
+     </div>
+ 
+  </header>
+
+    <div class="row" style="display:flex; flex-wrap: wrap;">
+
+      <% for(var i=0; i<15; i++) { %>
+         
+         <div class"col-md-3 col-sm-6">
+          
+            <div class="thumbnail">
+             
+             <img style="width:256px; height:256px; margin: 20px 20px; filter: grayscale(100%);"  src="<%= response[i].url %>">
+             
+            </div>
+         
+         </div>
+         
+      <% } %>
+
+    </div>
+
+</div>
+
+<% include partials/footer %>
