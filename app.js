@@ -1,11 +1,11 @@
-var express= require("express");
-var app=express();
-var body= require("body-parser");
-var mongoose= require("mongoose");
-var Scraper = require ('images-scraper');
-var bing = new Scraper.Bing();
-var Image=require("./models/images");
-var Keyword=require("./models/keywords");
+var express= require("express"),
+ app=express(),
+ body= require("body-parser"),
+ mongoose= require("mongoose"),
+ Scraper = require ('images-scraper'),
+ bing = new Scraper.Bing(),
+ Image=require("./models/images"),
+ Keyword=require("./models/keywords");
 // var Jimp = require("jimp");
 
 //connecting to DB
