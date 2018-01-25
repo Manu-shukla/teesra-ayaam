@@ -1,5 +1,5 @@
-var mongoose= require("mongoose");
-var imageSchema = new mongoose.Schema({
+var mongoose= require("mongoose"),
+   imageSchema = new mongoose.Schema({
     url:String
 });
 
