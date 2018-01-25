@@ -1,5 +1,5 @@
-var mongoose= require("mongoose");
-var keywordSchema = new mongoose.Schema({
+var mongoose= require("mongoose"),
+    keywordSchema = new mongoose.Schema({
     name:String,
     image: [{
         type: mongoose.Schema.Types.ObjectId,
